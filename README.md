@@ -16,7 +16,7 @@ Go to browser open http://localhost:3005/api/playvideo/sample2.mp4 or
 
  http://localhost:3005/api/playvideo/sample1.mp4
 
- you can see the streaming . How? You can see video below loading in chunks try to drag the video it will not allow as video is not loadded completly.
+ you can see the streaming . How? You can see video below loading in chunks ,  try to drag the video it will not allow as video is loading in chunks and not loadded completly.
  
  To achieve this I have used nodejs's fs module which will create stream and pipe function which will serve the streamed data.
 
