@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const mediaserver = require('mediaserver');
-const path = require('path');
-const fs  = require('fs');
+const path = require("path");
+const fs = require("fs");
 
 app.get("/", (req, res)=>{
     res.send("hello world!");
