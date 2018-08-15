@@ -29,6 +29,23 @@ Go to browser open http://localhost:3005/api/playvideo/sample2.mp4 or
  To achieve this first I thought let me split videos into chunks then convert to image. But couldnt achieve it.
  Then i used fs modules readable to achieve same, I was able to generate chunks but not able to convert them to image.
 
+ Then finally after exploring I got to know about ffmpeg command.
+
+ ffmpeg A complete, cross-platform solution to record, convert and stream audio and video.
+
+ So now how to achieve this in nodejs. As my system was mac from brew command which is mac systems package manager I installed the FFMPEG. Then I ran below command which converts videos to image one frame per second. 
+
+ ffmpeg -i videos/sample1.mp4  -vf fps=1 out%d.bmp.
+
+ Ok! First part was done able to convert video to image. But how to achieve this in node js.
+
+ There is module in node js "child-process".The child_process module enables us to access Operating System functionalities by running any system command inside a, well, child process.We can also control the arguments to be passed to the underlying OS command, and we can do whatever we want with that command’s output.
+
+ The spawn function launches a command in a new process and we can use it to pass that command any arguments.
+
+ So if you see file "appUseChildProcessModule" using child-process spawn and command ffmpeg we are converting video to image for every second. So for 5 second image 5 bmp images got generated. You can run and see this by node 
+
+
  
 
 
