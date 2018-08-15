@@ -43,7 +43,9 @@ Go to browser open http://localhost:3005/api/playvideo/sample2.mp4 or
 
  The spawn function launches a command in a new process and we can use it to pass that command any arguments.
 
- So if you see file "appUseChildProcessModule" using child-process spawn and command ffmpeg we are converting video to image for every second. So for 5 second image 5 bmp images got generated. You can run and see this by node 
+ So if you see file "appUseChildProcessModule" using child-process spawn and command ffmpeg we are converting video to image for every second. So for 5 second image 5 bmp images got generated. You can run and see this by node appUseChildProcessModule.js
+
+ Note: please install ffmpeg command from internet based on windows/mac.
 
 
  
